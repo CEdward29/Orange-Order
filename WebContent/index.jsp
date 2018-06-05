@@ -2,13 +2,19 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
+<head lang="zh">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>店铺列表</title>
 <link href="css/index.css" type="text/css" rel="stylesheet"> 
 <link href="css/index2.css" type="text/css" rel="stylesheet" />
 <script src="js/index.js"></script>
 <script type="text/javascript" src="js/index1.js"></script> 
+ <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="layui/css/layui.css"  media="all">
+
+
 </head>
 
 <body>
@@ -29,10 +35,10 @@
      		</div> 
      		<nav class="topbar-nav" role="navigation"> 
       			<ul class="topbar-site-nav"> 
-       				<li><a class="tnav-link" rel="nofollow" href="member_order.html">首页</a></li> 
-       				<li><a class="tnav-link" rel="nofollow" href="gift.html">我的订单</a></li> 
-       				<li><a class="tnav-link" rel="nofollow" href="http://t.dianping.com/home?latitude=31.239567&amp;longitude=121.437477&amp;distance=500&amp;utm_source=eleme1&amp;utm_medium=eleme&amp;utm_term=pc&amp;utm_content=1&amp;utm_campaign=f" target="_blank">加盟合作</a></li> 
-       				<li><a class="tnav-link" rel="nofollow" href="support.html">我的客服</a></li> 
+       				<li><a class="tnav-link" rel="nofollow" href="index.jsp">首页</a></li> 
+       				<li><a class="tnav-link" rel="nofollow" href="order.jsp">我的订单</a></li> 
+       				<li><a class="tnav-link" rel="nofollow" href="" target="_blank">加盟合作</a></li> 
+       				<li><a class="tnav-link" rel="nofollow" href="">我的客服</a></li> 
      			 </ul> 
       			 <div id="topbar_cart" class="eleme_dropdown topbar-widget topbar-cart empty"> 
        			 	<a class="e_toggle twidget-toggle"> <span id="tcart_total" class="tcart-total twidget-total">0</span> <i class="icon-tcart"></i> </a> 
@@ -49,23 +55,174 @@
     	</div> 
 	</header>
 	
-
-	
 	<div class="container">
 		<div id="promotion_banner" class="promotion-banner"> 
-     	<div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 950px; height: 80px; margin: 0px; overflow: hidden;"><ul id="promotion_carousel" class="carousel-wrapper" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; height: 880px; width: 950px; z-index: auto;"> 
-       
-       
-       
-       
-      <li class="carousel-block" style="margin-bottom: 0px;"> <a rel="nofollow" target="_blank" href="/activity/sdjb" data-id="promotion_banner_sdjb"> <img src="images/店铺1.jpg"> </a> </li> 
-     <li class="carousel-block" style="margin-bottom: 0px;"> <a rel="nofollow" target="_blank" href="/activity/100millon-bonus" data-id="promotion_banner_100millon-bonus"> <img src="images/店铺2.jpg"> </a> </li><li class="carousel-block" style="margin-bottom: 0px;"> <a rel="nofollow" target="_blank" href="/activity/cyzxff20150312" data-id="promotion_banner_cyzxff20150312"> <img src="images/795627d940d71323855b99bf36685gif.gif"> </a> </li><li class="carousel-block" style="margin-bottom: 0px;"> <a rel="nofollow" target="_blank" href="/activity/xnbonus_2015" data-id="promotion_banner_xnbonus_2015"> <img src="images/店铺2.jpg"> </a> </li><li class="carousel-block" style="margin-bottom: 0px;"> <a rel="nofollow" target="_blank" href="/activity/pinpaiguan1" data-id="promotion_banner_pinpaiguan1"> <img src="images/店铺3.jpg"> </a> </li></ul></div> 
-     <ol class="carousel_pager carousel-pager" style="display: block;"><li class="pgn">1</li><li class="pgn">2</li><li class="pgn">3</li><li class="pgn">4</li><li class="pgn selected">5</li></ol> 
-    </div>
-	
-	
-	
+			<div class="layui-carousel" id="test10" >
+  				<div carousel-item="" >
+				    <div><img src="images/lunbo1.jpg"></div>
+				    <div><img src="images/lunbo2.jpg"></div>
+				    <div><img src="images/lunbo3.jpg"></div>
+				    <div><img src="images/lunbo4.jpg"></div>
+				    <div><img src="images/lunbo5.jpg"></div>
+ 				</div>
+			</div>
+		</div>
+		
+		<div class="row promoted-restaurants restaurants-row"> 
+     		<div class="span12 row-wrapper"> 
+      			<div class="row"> 
+      				<div class="span12"> 
+        				<table class="restaurant-list-table"> 
+         					<tbody> 
+          						<tr> 
+           							<div class="restaurant-block" >              
+     									<div class="line-one"> 
+              								<div class="logo-wrapper"> 
+               									<div class="logo">                
+                									<img class="restaurant-logo" alt="Q堡堡" src="images/shop1.jpg"> 
+               									</div> 
+               									<div title="" class="deliver-time-wrapper busy tooltip_on" data-toggle="tooltip" data-original-title="餐厅送餐时间超过45分钟">30+分钟 </div> 
+              								</div> 
+              								<div class="info"> 
+               									<div class="name"> 
+                									<a class="restaurant-link" href="shop1.jsp" target="_blank">Q堡堡</a> 
+               									</div>               
+               									<div class="flavors">&nbsp;&nbsp;起送：￥20</br>&nbsp;&nbsp;配送费：￥2</div>  
+              								</div> 
+             							</div>              
+       								</div> 
+						         </tr>						         
+						         <hr style="height:1px;border:none;border-top:2px double #ff8000;" />
+						         
+						         <tr> 
+           							<div class="restaurant-block" >              
+     									<div class="line-one"> 
+              								<div class="logo-wrapper"> 
+               									<div class="logo">                
+                									<img class="restaurant-logo" alt="尊宝披萨" src="images/shop2.jpg"> 
+               									</div> 
+               									<div title="" class="deliver-time-wrapper busy tooltip_on" data-toggle="tooltip" data-original-title="餐厅送餐时间超过45分钟">40+分钟 </div> 
+              								</div> 
+              								<div class="info"> 
+               									<div class="name"> 
+                									<a class="restaurant-link" href="shop2.jsp" target="_blank">尊宝披萨</a> 
+               									</div>               
+               									<div class="flavors">&nbsp;&nbsp;起送：￥50</br>&nbsp;&nbsp;配送费：￥5</div>  
+              								</div> 
+             							</div>              
+       								</div> 
+						         </tr>
+						         <hr style="height:1px;border:none;border-top:2px double #ff8000;" />      
+						         
+						         <tr> 
+           							<div class="restaurant-block" >              
+     									<div class="line-one"> 
+              								<div class="logo-wrapper"> 
+               									<div class="logo">                
+                									<img class="restaurant-logo" alt="九毛九" src="images/shop3.jpg"> 
+               									</div> 
+               									<div title="" class="deliver-time-wrapper busy tooltip_on" data-toggle="tooltip" data-original-title="餐厅送餐时间超过45分钟">45+分钟 </div> 
+              								</div> 
+              								<div class="info"> 
+               									<div class="name"> 
+                									<a class="restaurant-link" href="shop3.jsp" target="_blank">九毛九</a> 
+               									</div>               
+               									<div class="flavors">&nbsp;&nbsp;起送：￥25</br>&nbsp;&nbsp;配送费：￥3</div>  
+              								</div> 
+             							</div>              
+       								</div> 
+						         </tr>
+						           						                 
+				         </tbody> 
+					</table> 
+				</div> 
+			</div> 
+		</div> 
 	</div>
-
+</div>
+          
+	<script src="layui/layui.js" charset="utf-8"></script>
+		<script>
+		layui.use(['carousel', 'form'], function(){
+		  var carousel = layui.carousel
+		  ,form = layui.form;
+		  
+		  //常规轮播
+		  carousel.render({
+		    elem: '#test1'
+		    ,arrow: 'always'
+		  });
+		  
+		  //改变下时间间隔、动画类型、高度
+		  carousel.render({
+		    elem: '#test2'
+		    ,interval: 100
+		    ,anim: 'fade'
+		    ,height: '120px'
+		  });
+		  
+		  //设定各种参数
+		  var ins3 = carousel.render({
+		    elem: '#test3'
+		  });
+		  //图片轮播
+		  carousel.render({
+		    elem: '#test10'
+		    ,width: '950px'
+		    ,height: '200px'
+		    ,interval: 1500
+		  });
+		  
+		  //事件
+		  carousel.on('change(test4)', function(res){
+		    console.log(res)
+		  });
+		  
+		  var $ = layui.$, active = {
+		    set: function(othis){
+		      var THIS = 'layui-bg-normal'
+		      ,key = othis.data('key')
+		      ,options = {};
+		      
+		      othis.css('background-color', '#5FB878').siblings().removeAttr('style'); 
+		      options[key] = othis.data('value');
+		      ins3.reload(options);
+		    }
+		  };
+		  
+		  //监听开关
+		  form.on('switch(autoplay)', function(){
+		    ins3.reload({
+		      autoplay: this.checked
+		    });
+		  });
+		  
+		  $('.demoSet').on('keyup', function(){
+		    var value = this.value
+		    ,options = {};
+		    if(!/^\d+$/.test(value)) return;
+		    
+		    options[this.name] = value;
+		    ins3.reload(options);
+		  });
+		  
+		  //其它示例
+		  $('.demoTest .layui-btn').on('click', function(){
+		    var othis = $(this), type = othis.data('type');
+		    active[type] ? active[type].call(this, othis) : '';
+		  });
+		});
+	</script>
+	<footer class="site-footer group" role="contentinfo"> 
+    	<div class="container"> 
+    		<p class="sfooter-line"> <a class="sfooter-link">我要开店</a> | <a class="sfooter-link" href="contact.jsp">联系我们</a> | <a class="sfooter-link" >服务条款和协议</a>  | <a class="sfooter-link" >加入我们</a> </p> 
+   	    	<p class="sfooter-line">版权@orange工作室</p> 
+   		</div> 
+  	</footer>     
+     
+</div>
+	
+<script src="js/index3.js"></script>
+	
 </body>
 </html>
