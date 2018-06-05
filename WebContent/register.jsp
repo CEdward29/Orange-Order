@@ -21,7 +21,7 @@
      			<h2 class="title">注册</h2>  
     		</div> 
     		<div class="panel-bd"> 
-     			<form id="register_form" class="form" method="post" autocomplete="off" novalidate="true"> 
+     			<form id="register_form" class="form" method="post" autocomplete="off" novalidate="true" action="${pageContext.request.contextPath }/RegisterServlet"> 
       			<div class="form-item"> 
       				<input id="register_username" class="inputbox js_inputbox async" name="username" minlength="5" maxlength="16" placeholder="用户名" required="" type="text"> 
        				<div class="g-error-tip hide"></div> 
