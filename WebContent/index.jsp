@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>店铺列表</title>
 <link href="css/index.css" type="text/css" rel="stylesheet"> 
-<link href="css/index2.css" type="text/css" rel="stylesheet" />
+
 <script src="js/index.js"></script>
 <script type="text/javascript" src="js/index1.js"></script> 
  <meta name="renderer" content="webkit">
@@ -17,129 +17,128 @@
 
 </head>
 
-<body>
-<div>
-	<header id="topbar" role="banner"> 
-    	<div class="container clearfix"> 
-     		<a id="logo" href="index.jsp" title="橙子外卖" alt="橙子外卖" role="logo">
-     			<h1 ><font color="black">orange</font></h1>
-     			<i class="default-logo"></i> </a> 
- 			<div id="topbar_search" class="topbar-search" role="search"> 
-      			<form id="tsearch_form" class="tsearch-form clearfix" action="/search" method="get"> 
-	       			<i class="icon-tsearch"></i> 
-	       			<input id="tsearch_input" class="tsearch-input" name="kw" autocomplete="off" placeholder="搜索餐厅，美食…" type="text"> 
-	       			<i id="ts_loading" class="icon-tloading hide"></i> 
-	       			<a id="ts_clear" class="icon-tclear hide"></a> 
-      			</form> 
-      			<div id="tsearch_autocomplete" class="tsearch-autocomplete"></div> 
-     		</div> 
-     		<nav class="topbar-nav" role="navigation"> 
-      			<ul class="topbar-site-nav"> 
-       				<li><a class="tnav-link" rel="nofollow" href="index.jsp">首页</a></li> 
-       				<li><a class="tnav-link" rel="nofollow" href="order.jsp">我的订单</a></li> 
-       				<li><a class="tnav-link" rel="nofollow" href="" target="_blank">加盟合作</a></li> 
-       				<li><a class="tnav-link" rel="nofollow" href="">我的客服</a></li> 
-     			 </ul> 
-      			 <div id="topbar_cart" class="eleme_dropdown topbar-widget topbar-cart empty"> 
-       			 	<a class="e_toggle twidget-toggle"> <span id="tcart_total" class="tcart-total twidget-total">0</span> <i class="icon-tcart"></i> </a> 
-       				<div class="e_dropdown twidget-dropdown"> 
-        				<div id="tcart_loading" class="twidget-loading"></div> 
-        				<div id="tcart_wrapper"></div> 
-       				</div> 
-      			</div> 
-      			<div class="topbar-user-nav tnav-link"> 
-       				<a rel="nofollow" href="login.jsp">登录</a> / 
-       				<a rel="nofollow" href="register.jsp">注册</a> 
-      			</div> 
-			</nav> 
-    	</div> 
-	</header>
+<body >
+<header id="topbar" role="banner"> 
+    <div class="container clearfix"> 
+     	<a id="logo" title="橙子外卖" alt="橙子外卖" role="logo">
+     		<h1 ><font color="black">orange</font></h1>
+     		<i class="default-logo"></i> </a> 
+ 		<div id="topbar_search" class="topbar-search" role="search"> 
+      		<form id="tsearch_form" class="tsearch-form clearfix" action="/search" method="get"> 
+	       		<i class="icon-tsearch"></i> 
+	       		<input id="tsearch_input" class="tsearch-input" name="kw" autocomplete="off" placeholder="搜索餐厅，美食…" type="text"> 
+	       		<i id="ts_loading" class="icon-tloading hide"></i> 
+	       		<a id="ts_clear" class="icon-tclear hide"></a> 
+      		</form> 
+      		<div id="tsearch_autocomplete" class="tsearch-autocomplete"></div> 
+     	</div> 
+     	<nav class="topbar-nav" role="navigation"> 
+      		<ul class="topbar-site-nav"> 
+       			<li><a class="tnav-link" rel="nofollow" href="index.jsp">首页</a></li> 
+       			<li><a class="tnav-link" rel="nofollow" href="">我的订单</a></li> 
+       			<li><a class="tnav-link" rel="nofollow" href="" target="_blank">加盟合作</a></li> 
+       			<li><a class="tnav-link" rel="nofollow" href="">我的客服</a></li> 
+     		</ul> 
+      		<div id="topbar_cart" class="eleme_dropdown topbar-widget topbar-cart empty"> 
+       			<a class="e_toggle twidget-toggle"> <span id="tcart_total" class="tcart-total twidget-total">0</span> <i class="icon-tcart"></i> </a> 
+       			<div class="e_dropdown twidget-dropdown"> 
+        			<div id="tcart_loading" class="twidget-loading"></div> 
+        			<div id="tcart_wrapper"></div> 
+       			</div> 
+      		</div> 
+      		<div class="topbar-user-nav tnav-link"> 
+       			<a rel="nofollow" href="login.jsp">登录</a> / 
+       			<a rel="nofollow" href="register.jsp">注册</a> 
+      		</div> 
+		</nav> 
+    </div> 
+</header>
 	
-	<div class="container">
-		<div id="promotion_banner" class="promotion-banner"> 
-			<div class="layui-carousel" id="test10" >
-  				<div carousel-item="" >
-				    <div><img src="images/lunbo1.jpg"></div>
-				    <div><img src="images/lunbo2.jpg"></div>
-				    <div><img src="images/lunbo3.jpg"></div>
-				    <div><img src="images/lunbo4.jpg"></div>
-				    <div><img src="images/lunbo5.jpg"></div>
- 				</div>
-			</div>
+<div class="container">
+	<div id="promotion_banner" class="promotion-banner"> 
+		<div class="layui-carousel" id="test10" >
+  			<div carousel-item="" >
+				<div><img src="images/lunbo3.jpg"></div>
+				<div><img src="images/lunbo2.jpg"></div>
+				<div><img src="images/lunbo1.jpg"></div>
+				<div><img src="images/lunbo4.jpg"></div>
+				<div><img src="images/lunbo5.jpg"></div>
+ 			</div>
 		</div>
+	</div>
 		
-		<div class="row promoted-restaurants restaurants-row"> 
-     		<div class="span12 row-wrapper"> 
-      			<div class="row"> 
-      				<div class="span12"> 
-        				<table class="restaurant-list-table"> 
-         					<tbody> 
-          						<tr> 
-           							<div class="restaurant-block" >              
-     									<div class="line-one"> 
-              								<div class="logo-wrapper"> 
-               									<div class="logo">                
-                									<img class="restaurant-logo" alt="Q堡堡" src="images/shop1.jpg"> 
-               									</div> 
-               									<div title="" class="deliver-time-wrapper busy tooltip_on" data-toggle="tooltip" data-original-title="餐厅送餐时间超过45分钟">30+分钟 </div> 
-              								</div> 
-              								<div class="info"> 
-               									<div class="name"> 
-                									<a class="restaurant-link" href="shop1.jsp" target="_blank">Q堡堡</a> 
-               									</div>               
-               									<div class="flavors">&nbsp;&nbsp;起送：￥20</br>&nbsp;&nbsp;配送费：￥2</div>  
-              								</div> 
-             							</div>              
-       								</div> 
-						         </tr>						         
-						         <hr style="height:1px;border:none;border-top:2px double #ff8000;" />
+	<div class="row promoted-restaurants restaurants-row"> 
+     	<div class="span12 row-wrapper"> 
+      		<div class="row"> 
+      			<div class="span12"> 
+        			<table class="restaurant-list-table"> 
+         				<tbody> 
+          					<tr> 
+           						<div class="restaurant-block" >              
+     								<div class="line-one"> 
+              							<div class="logo-wrapper"> 
+               								<div class="logo">                
+                								<img class="restaurant-logo" alt="Q堡堡" src="images/shop1.jpg"> 
+               								</div> 
+               								<div title="" class="deliver-time-wrapper busy tooltip_on" data-toggle="tooltip" data-original-title="餐厅送餐时间超过45分钟">30+分钟 </div> 
+              							</div> 
+              							<div class="info"> 
+               								<div class="name"> 
+                								<a class="restaurant-link" href="shop1.jsp" target="_blank">Q堡堡</a> 
+               								</div>               
+               								<div class="flavors">&nbsp;&nbsp;起送：￥20</br>&nbsp;&nbsp;配送费：￥2</div>  
+              							</div> 
+             						</div>              
+       							</div> 
+						    </tr>						         
+						    <hr style="height:1px;border:none;border-top:2px double #ff8000;" />
 						         
-						         <tr> 
-           							<div class="restaurant-block" >              
-     									<div class="line-one"> 
-              								<div class="logo-wrapper"> 
-               									<div class="logo">                
-                									<img class="restaurant-logo" alt="尊宝披萨" src="images/shop2.jpg"> 
-               									</div> 
-               									<div title="" class="deliver-time-wrapper busy tooltip_on" data-toggle="tooltip" data-original-title="餐厅送餐时间超过45分钟">40+分钟 </div> 
-              								</div> 
-              								<div class="info"> 
-               									<div class="name"> 
-                									<a class="restaurant-link" href="shop2.jsp" target="_blank">尊宝披萨</a> 
-               									</div>               
-               									<div class="flavors">&nbsp;&nbsp;起送：￥50</br>&nbsp;&nbsp;配送费：￥5</div>  
-              								</div> 
-             							</div>              
-       								</div> 
-						         </tr>
-						         <hr style="height:1px;border:none;border-top:2px double #ff8000;" />      
+						    <tr> 
+           					<div class="restaurant-block" >              
+     								<div class="line-one"> 
+              							<div class="logo-wrapper"> 
+               								<div class="logo">                
+                								<img class="restaurant-logo" alt="尊宝披萨" src="images/shop2.jpg"> 
+               								</div> 
+               								<div title="" class="deliver-time-wrapper busy tooltip_on" data-toggle="tooltip" data-original-title="餐厅送餐时间超过45分钟">40+分钟 </div> 
+              							</div> 
+              							<div class="info"> 
+               								<div class="name"> 
+                								<a class="restaurant-link" href="shop2.jsp" target="_blank">尊宝披萨</a> 
+               								</div>               
+               								<div class="flavors">&nbsp;&nbsp;起送：￥50</br>&nbsp;&nbsp;配送费：￥5</div>  
+              							</div> 
+             						</div>              
+		       							</div> 
+									</tr>
+						        <hr style="height:1px;border:none;border-top:2px double #ff8000;" />      
 						         
-						         <tr> 
-           							<div class="restaurant-block" >              
-     									<div class="line-one"> 
-              								<div class="logo-wrapper"> 
-               									<div class="logo">                
-                									<img class="restaurant-logo" alt="九毛九" src="images/shop3.jpg"> 
-               									</div> 
-               									<div title="" class="deliver-time-wrapper busy tooltip_on" data-toggle="tooltip" data-original-title="餐厅送餐时间超过45分钟">45+分钟 </div> 
-              								</div> 
-              								<div class="info"> 
-               									<div class="name"> 
-                									<a class="restaurant-link" href="shop3.jsp" target="_blank">九毛九</a> 
-               									</div>               
-               									<div class="flavors">&nbsp;&nbsp;起送：￥25</br>&nbsp;&nbsp;配送费：￥3</div>  
-              								</div> 
-             							</div>              
-       								</div> 
-						         </tr>
-						           						                 
-				         </tbody> 
-					</table> 
-				</div> 
+						       <tr> 
+           						<div class="restaurant-block" >              
+     								<div class="line-one"> 
+              							<div class="logo-wrapper"> 
+               								<div class="logo">                
+                								<img class="restaurant-logo" alt="九毛九" src="images/shop3.jpg"> 
+               								</div> 
+               								<div title="" class="deliver-time-wrapper busy tooltip_on" data-toggle="tooltip" data-original-title="餐厅送餐时间超过45分钟">45+分钟 </div> 
+              							</div> 
+              							<div class="info"> 
+               								<div class="name"> 
+                								<a class="restaurant-link" href="shop3.jsp" target="_blank">九毛九</a> 
+               								</div>               
+               								<div class="flavors">&nbsp;&nbsp;起送：￥25</br>&nbsp;&nbsp;配送费：￥3</div>  
+              							</div> 
+             						</div>              
+       							</div> 
+						   </tr>
+					           						                 
+				      </tbody> 
+				</table> 
 			</div> 
 		</div> 
-	</div>
+	</div> 
 </div>
+
           
 	<script src="layui/layui.js" charset="utf-8"></script>
 		<script>
