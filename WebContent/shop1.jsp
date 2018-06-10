@@ -10,6 +10,7 @@
 <link href="css/shop1.css" type="text/css" rel="stylesheet">
 <link href="css/indexshop.css" type="text/css" rel="stylesheet">  
 <link href="css/shop11.css" type="text/css" rel="stylesheet">
+<link href="css/car.css" type="text/css" rel="stylesheet">
 <script type="text/javascript" src="js/index1.js"></script> 
 </head>
 
@@ -162,6 +163,53 @@
     	</section> 
    </aside> 
    <div class="restaurant-cart" id="rst_cart"></div> 
+</div>
+
+<div class="shopping-cart clearfix" data-status="1" data-poiname="Q堡堡" data-poiid="144703063152442919">
+	<form method="post" action="/order/shoppingcart" id="shoppingCartForm">
+    	<div class="first-to-app clearfix j-first-to-app" style="top: -249px;">
+            <span class="fl">电脑下单不享优惠了哦，优惠活动手机专享~</span>
+        </div>
+  	    <div class="order-list" style="top: -204px;">
+  	    	<div class="title">
+            	<span class="fl buy-title">购物车</span>
+  	        		<span class="fr dishes"><a href="javascript:;" class="clear-cart"><i></i>清空菜品</a></span>
+  	      	</div>
+  	      	<ul style="height: auto; overflow: visible;">
+  	      		<li class="clearfix  food-431112897_470953543" data-fid="431112897" data-fkey="431112897_470953543">  
+  	      			<div class="fl na clearfix" title="黄金童子鸡">    
+  	      				<div class="">黄金童子鸡</div> 
+  	      			</div>    
+  	      			<div class="fl modify clearfix">    
+  	      				<a href="javascript:;" class="fl minus">-</a>    
+  	      				<input class="fl txt-count" value="1 " maxlength="2" type="text">    
+  	      				<a href="javascript:;" class="fl plus">+</a>  
+  	      			</div>  
+  	      			<div class="fr pri "><span>¥15</span></div>
+  	      		</li>
+  	      	</ul>
+  	      	<div class="other-charge">  	        
+  	        	<div class="clearfix delivery-cost">
+  	          		<span class="fl">配送费(不计入起送价)</span>
+  	          		<span class="fr shippingfee">¥1</span>
+  	        	</div>
+  	     	</div>
+  	      	<div class="privilege hidden" style=""></div>
+  	      	<div class="total">共<span class="totalnumber">1</span>份，总计<span class="bill">15</span></div>
+		</div>
+  	    <div class="footer clearfix">
+          	<div class="logo icon fl"></div>
+          	<div class="brief-order fl" style="display: none;">
+            	<span class="count">1</span>
+            	<span class="price"><i>¥</i>15</span>
+          	</div>
+          	<div class="fr">
+           		<a class="ready-pay borderradius-2" href="javascript:;" style="display: none;">差<span data-left="20" class="margintominprice">0</span>元起送</a>
+            	<input class="go-pay borderradius-2" value="立即下单" style="display: inline-block;" type="submit">
+            	<input value="{&quot;poi&quot;:&quot;144703063152442919&quot;,&quot;foods&quot;:[{&quot;sku&quot;:470953543,&quot;attrs&quot;:[],&quot;num&quot;:1}]}" class="order-data" name="shop_cart" type="hidden">
+          	</div>
+		</div>       						
+	</form>
 </div>
 
 <footer class="site-footer group" role="contentinfo"> 

@@ -1815,9 +1815,7 @@ small {
 cite {
 	font-style:normal
 }
-form {
-	margin:0 0 18px
-}
+
 fieldset {
 	padding:0;
 	margin:0;
@@ -13304,4 +13302,30 @@ body {
 	border-bottom:10px solid transparent
 }
 
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, form, button, dl, dt, dd, select, input, textarea {
+    margin: 0;
+}
+body {
+    font: 12px/1.125 Microsoft Yahei,Arial,Helvetica,sans-serif;
+        font-size: 12px;
+        line-height: 1.125;
+    line-height: 1.4;
+}
+.fr {
+    float: right;
+}
+
+
+
+.shopping-cart ul li {
+
+    border-bottom: 1px solid #E5E5E5;
+    margin: 0 10px;
+
+}
+.clearfix {
+
+    zoom: 1;
+
+}
 
